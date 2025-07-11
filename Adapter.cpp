@@ -1,3 +1,7 @@
+/*ADAPTER : makes 2 different Interfaces with similar purpose compatible with each other (legacy and new systems ) */
+/*2 types : object adapter and class adapter*/
+/*This is object adapter*/
+
 # include <iostream>
 using namespace std;
 
@@ -41,7 +45,7 @@ int main()
 {
     LegacyDevice l;
     newprinter n;
-    adapter a(&l);
+    adapter a(&l); //refrencing the legcaysystem object 
     a.newprint();
     n.newprint();
     return 0;
